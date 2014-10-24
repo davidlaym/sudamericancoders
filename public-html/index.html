@@ -141,7 +141,7 @@
   						<h3 class="font-kaushan text-red">{{getEpisodeTitle(item)}}</h3>
 	  					<p ng-bind-html="item.description | formatOverview"></p>
 	  					<span class="service-icon">  <i class="fa fa-volume-up"></i></span>
-						<audio controls="controls">
+						<audio controls preload="none">
 							<source ng-src="{{getURL(item)}}"/>
 						</audio>
   					</div>
