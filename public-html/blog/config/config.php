@@ -8,7 +8,7 @@ return array(
     'article.path'      => './articles',      // Path to articles
     'date.format'       => 'd M, Y',   // Date format to be used in article page (not for routes)   
     'themes.path'       => './themes',  // Path to templates
-    'active.theme'      => 'textpress',  // Current active template
+    'active.theme'      => 'scblog',  // Current active template
     'layout.file'       => 'layout',    // Site layout file
     'file.extension'    => '.txt',   // file extension of articles
     'disqus.username'   => '',   // Your disqus username or false (Global)
@@ -37,6 +37,10 @@ return array(
                 ,'month'    =>'([1-9]|[01][0-9])'
                 ,'date'     =>'([1-9]|[0-3][0-9])'
             )
+        ),
+        'section' => array(
+            'route'     => '/:section/:article',
+            'template'  =>'article'
         ),
         'category' => array(
             'route'     => '/category/:category',

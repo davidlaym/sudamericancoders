@@ -216,7 +216,11 @@ class Textpress
         $slug = (array_key_exists('slug', $meta) && $meta['slug'] !='') 
                     ? $meta['slug']
                     : $this->slugize($meta['title']);
-        $url = $this->getArticleUrl($meta['date'], $slug);
+
+        $url = (array_key_exists('section',$meta)
+                    ? $this->getArticleUrl($meta['date'], $slug, $meta['section'])
+                    : $this->getArticleUrl($meta['date'], $slug));
+
         $meta['category'] = $this->collectCategories($meta);
         $meta['tag'] = $this->collectTags($meta);
         $meta['url'] = $this->getUrl() . $url;
@@ -421,6 +425,12 @@ class Textpress
                                         ? $article->getMeta('template')
                                         : $template;
                         break;
+                    case 'section'  :
+                        $article = $self->setArticle($self->getSectionPath($args));
+                        $template = ($article->getMeta('template') && $article->getMeta('template') !="")
+                                        ? $article->getMeta('template')
+                                        : $template;
+                        break;
                     case 'archives' :
                         $self->loadArchives($args);
                         break;
@@ -484,26 +494,44 @@ class Textpress
         return $this->getArticleUrl($date,$slug);
     }
 
+    public function getSectionPath($params) {
+
+        $date = new \DateTime();
+        $slug = array_pop($params);
+        $section = array_pop($params);
+        return $this->getArticleUrl($date,$slug,$section);
+    }
+
     /**
     * Creates url from a Date and Title
     *
     * @param string $date Date of article
     * @param string $slug Article title
     */
-    public function getArticleUrl($date,$slug)
+    public function getArticleUrl($date, $slug, $section=null)
     {
-        $date = new \DateTime($date);
-        $date = $date->format('Y-m-d');
-        $dateSplit = explode('-', $date);
-        return $this->slim->urlFor(
+        if(isset($section)) {
+            return $this->slim->urlFor(
                                 'article',
                                 array(
-                                    'year'=>$dateSplit[0],
-                                    'month'=>$dateSplit[1],
-                                    'date' => $dateSplit[2],
+                                    'section'=>$section,
                                     'article'=>$slug
                                 )
                             ) ;
+        } else {
+            $date = new \DateTime($date);
+            $date = $date->format('Y-m-d');
+            $dateSplit = explode('-', $date);
+            return $this->slim->urlFor(
+                                    'article',
+                                    array(
+                                        'year'=>$dateSplit[0],
+                                        'month'=>$dateSplit[1],
+                                        'date' => $dateSplit[2],
+                                        'article'=>$slug
+                                    )
+                                ) ;
+        }
     }
 
     /**
