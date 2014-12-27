@@ -57,7 +57,7 @@
     </div>
     <hr>
     <footer id="site-footer">
-        <p>Powered asdf asdf by TextPress. &copy; <a href="http://blog.shameerc.com" target="_blank">Shameer C</a> 2013.</p>
+        <p>Powered by TextPress. &copy; <a href="http://blog.shameerc.com" target="_blank">Shameer C</a> 2013.</p>
     </footer>
     <!-- Le javascript
     ================================================== 
