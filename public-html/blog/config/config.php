@@ -1,10 +1,10 @@
 <?php
 return array(
-    'site.baseurl'      => 'http://textpress.shameerc.com',   // Site URL (Global)
-    'site.name'         => 'SudamericanCoders.fm',   // Site name (Global)
-    'site.title'        => 'SudamericanCoders.fm',  // Site default title (Global)
-    'site.description'  => 'SudamericanCoders.fm',  // Site default description (Global)
-    'author.name'       => 'Sudamerican Coders', // Global author name 
+    'site.baseurl'      => 'http://localhost:8248',   // Site URL (Global)
+    'site.name'         => 'TextPress',   // Site name (Global)
+    'site.title'        => 'PHP Flat-file blog engine',  // Site default title (Global)
+    'site.description'  => 'TextPress is an open source flat-file blog engine for PHP',  // Site default description (Global)
+    'author.name'       => 'Author name', // Global author name 
     'article.path'      => './articles',      // Path to articles
     'date.format'       => 'd M, Y',   // Date format to be used in article page (not for routes)   
     'themes.path'       => './themes',  // Path to templates

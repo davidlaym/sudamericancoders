@@ -153,6 +153,7 @@ class Textpress
         $this->slim->view()->setTemplatesDirectory($this->themeBase);
         $this->setViewConfig();
         $this->setRoutes();
+        $this->loadArticles();
     }
 
     /**
@@ -200,13 +201,15 @@ class Textpress
         if(!($articlePath = $this->getArticlePath($fileName))){
             return false;
         }
+
         $handle     = fopen($articlePath, 'r');
         $content    = stream_get_contents($handle);
         // Don't allow out-of-control blank lines
-        $content    = preg_replace("/" . PHP_EOL. "{2,}/", PHP_EOL . PHP_EOL, $content);
-        $sections   = explode( PHP_EOL . PHP_EOL, $content);
+        $content    = preg_replace("/" .  "\n". "{2,}/", "\n" . "\n", $content);
+        $sections   = explode( "\n" . "\n", $content);
         $meta       = json_decode(array_shift($sections), true);
-        $contents   = implode( PHP_EOL . PHP_EOL, $sections);
+        
+        $contents   = implode( "\n" . "\n", $sections);
         if($this->getConfig('markdown')){ 
             $contents = \Michelf\MarkdownExtra::defaultTransform($contents);
         }
@@ -650,8 +653,7 @@ class Textpress
     */
     public function run()
     {
-        $this->init();
-        $this->loadArticles();
+        $this->init();        
         $this->slim->run();
     }
 }
