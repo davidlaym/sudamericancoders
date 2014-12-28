@@ -38,10 +38,6 @@ return array(
                 ,'date'     =>'([1-9]|[0-3][0-9])'
             )
         ),
-        'section' => array(
-            'route'     => '/:section/:article',
-            'template'  =>'article'
-        ),
         'category' => array(
             'route'     => '/category/:category',
             'template'  => 'index'
@@ -76,6 +72,14 @@ return array(
             'route'     => '/sitemap.xml',
             'template'  => 'sitemap',
             'layout'    => false,
+        ),
+        'section_page' => array(
+            'route'     => '/:section/:article',
+            'template'  =>'article'
+        ),
+        'section' => array(
+            'route'     => '/:section',
+            'template'  =>'index'
         )
     ),
 );

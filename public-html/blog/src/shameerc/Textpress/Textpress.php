@@ -222,6 +222,7 @@ class Textpress
                     : $this->getArticleUrl($meta['date'], $slug));
 
         $meta['category'] = $this->collectCategories($meta);
+        $meta['section'] = $this->collectSection($meta);
         $meta['tag'] = $this->collectTags($meta);
         $meta['url'] = $this->getUrl() . $url;
         $meta['path'] = $url;
@@ -425,7 +426,7 @@ class Textpress
                                         ? $article->getMeta('template')
                                         : $template;
                         break;
-                    case 'section'  :
+                    case 'section_page'  :
                         $article = $self->setArticle($self->getSectionPath($args));
                         $template = ($article->getMeta('template') && $article->getMeta('template') !="")
                                         ? $article->getMeta('template')
@@ -436,6 +437,7 @@ class Textpress
                         break;
                     case 'category' :
                     case 'tag'      :
+                    case 'section'  :
                         $self->filterArticles($key,$args[0]);
                         break;
 
@@ -510,9 +512,9 @@ class Textpress
     */
     public function getArticleUrl($date, $slug, $section=null)
     {
-        if(isset($section)) {
+        if(isset($section) && $section != null) {
             return $this->slim->urlFor(
-                                'article',
+                                'section_page',
                                 array(
                                     'section'=>$section,
                                     'article'=>$slug
@@ -603,6 +605,26 @@ class Textpress
         return $temp;
     }
 
+    /**
+    * Collects categories from all articles
+    * 
+    * @param string $meta Article meta data
+    * @return array of distinct categories
+    */
+    public function collectSection($meta)
+    {
+        $temp = array();
+        if(array_key_exists('section', $meta) && $meta['section']){
+                $section = $meta['section'];
+                $slug = $this->slugize($section);
+                $temp[$slug] = trim($section);
+                // this is an array to provide compatibility with 
+                // the categories an tags, specially in the filter.
+                array_push($temp, $section);
+        }
+
+        return $temp;
+    }
     /**
     * Collect tags from all articles to build tag cloud
     * Each tag will be an object of Tag with name and count

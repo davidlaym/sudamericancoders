@@ -3,7 +3,7 @@
 "author":"Sudamerican Coders",
 "date":"10-08-2014",
 "tag":"episodio",
-"category":"Episodios",
+"category":"episodios",
 "section":"notas",
 "slug": "S01E08"
 }
