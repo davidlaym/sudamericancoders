@@ -159,6 +159,11 @@
   					</div>
   				</div>	
   			</div>
+        <div class="row" style="padding-bottom:20px">
+          <div class="col-md-4 col-md-offset-8 text-right">
+            <a class="btn btn-danger" href="/notas">Todos nuestros episodios</a>
+          </div>
+        </div>
   		</div>
   	</div>
   	<!-- end:service -->
@@ -185,15 +190,13 @@
 						Creemos  que  es  sumamente  importante entregar a  la 
 						<span class="font-kaushan text-black">comunidad de desarrolladores</span> contenido de calidad y en 
 						<span class="font-kaushan text-red">nuestro idioma</span>.</p>
-					<p>	<strong>Agustín</strong> es emprendedor, académico y líder de la comunidad 
-						de Chile Ágil.</p>
   				</div>
   				<!-- break -->
   				<div class="col-md-6 col-sm-6">
             <div class="row">
               <div ng-repeat="coder in coders" class="col-md-3 col-sm-3">
                 <div class="team-container coder-picture center-block">
-                  <img ng-src="img/{{coder.foto}}" class="img-responsive" alt="lucky - business theme">
+                  <img ng-src="<?php echo $global['assets.prefix'];?>/themes/scblog/assets/img/{{coder.foto}}" class="img-responsive" alt="lucky - business theme">
                   <div class="team-desc">
                     <h4>{{coder.nombre}} <small>@{{coder.twitter}}</small></h4>
                     <ul class="list-inline">

@@ -117,7 +117,7 @@ sudCodersHomeApp.controller('EpisodesController',['$scope','$http','$sce','$log'
 sudCodersHomeApp.controller('CodersController',['$scope','$log',function($scope,$log){
 	$scope.coders=[
 	{nombre:"Juan Cristobal Olivares",twitter:'juancriolivares',foto:'juancristobalolivares.jpg',linkedin:'www.linkedin.com/profile/view?id=58496921'},
-	{nombre:"Agustín Villena",twitter:'agustinvillena',foto:'agustinvillena.jpg',linkedin:'cl.linkedin.com/in/agustinvillena'},
+	{nombre:"David Lay",twitter:'davidlaym',foto:'davidlaym.jpg',linkedin:'cl.linkedin.com/in/davidlaym'},
 	{nombre:"Germán González",twitter:'taichi2000',foto:'germangonzalez.jpg',linkedin:'cl.linkedin.com/in/cvgermangonzalez'},
 	{nombre:"Sergio Campos",twitter:'chech0x',foto:'sergiocampos.jpg',linkedin:'cl.linkedin.com/in/scamposv'}
 	];
