@@ -29,45 +29,7 @@
   </head>
   <body id="page-home" ng-app="sudCodersHome">
 
-  	<!-- begin:navbar -->
-  	<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand menus" href="#page-home">Sudamerican { Coders }</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="hidden"><a href="#page-home"></a></li>
-            <li><a href="#episodios">Episodios&nbsp;[&nbsp;]</a></li>
-            <li><a href="#about">{&nbsp;Coders&nbsp;}</a></li>
-            <!--li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#component">Component</a></li-->
-            <li class="dropdown <?php if($global["route"] == "category") echo "active";?>">
-              <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">// Blog <b class="caret"></b></b></a>
-              <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                <?php
-                  foreach ($global['categories'] as $slug => $category) {
-                    if($category == "Episodios") { continue; }
-                    echo '<li><a tabindex="-1" href="' . $global["base.url"] . '/category/'.$slug.'">'. $category .'</a></li>';
-                  }
-                ?>
-              </ul>
-            </li>
-            <li><a href="#contact">Contactenos</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-  	<!-- end:navbar -->
+    <?php include("_nav.php"); ?>
 
   	<!-- begin:header -->
   	<div id="header" class="carousel slide carousel-fade" data-ride="carousel">
@@ -213,6 +175,63 @@
   		</div>
   	</div>
   	<!-- end:about -->
+
+<!-- begin:contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title">
+              <h2>Contact Us <small>If you have any questions, please leave us a message.</small></h2>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="row">
+          <div class="col-md-5 col-sm-5 marg30-btm">
+            <h4 class="text-uppercase text-xbold">Aditional Information</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi.</p>
+            <br>
+            <address>
+              <strong>Templateninja, Inc.</strong><br><br>
+              231 Yogyakarta, INA 55791<br>
+              mail@domain.com<br>
+              http://www.domain.com <br>
+              <abbr title="Phone">Telp.</abbr> (0274) 441-5000
+            </address>
+          </div>
+
+          <div class="col-md-7 col-sm-7">
+            <form role="form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" class="form-control input-lg" id="author" placeholder="Name: " required>
+                <span class="form-focus-icon focus-icon-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only">Email address</label>
+                <input type="email" class="form-control input-lg" id="email" placeholder="Email: " required>
+                <span class="form-focus-icon focus-icon-mail"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="sr-only">Phone</label>
+                <input type="text" class="form-control input-lg" id="phone" placeholder="Phone: " required>
+                <span class="form-focus-icon focus-icon-phone"></span>
+              </div>
+              <div class="form-group">
+                <label for="message" class="sr-only">Message</label>
+                <textarea class="form-control input-lg" id="message" placeholder="Message: " rows="5" required></textarea>
+                <span class="form-focus-icon focus-icon-message"></span>
+              </div>
+              <button type="submit" class="btn btn-lucky btn-lg"><i class="fa fa-envelope-o"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:contact -->
 
     <!-- begin:social -->
     <div id="social">
