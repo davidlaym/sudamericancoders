@@ -1,3 +1,4 @@
+<section class="container">
 <article class="post">
   <header>
     <h1><?php echo $article->getTitle(); ?></h1>
@@ -30,4 +31,4 @@
     <?php }?>
   </section>
 </article>
-
+</section>

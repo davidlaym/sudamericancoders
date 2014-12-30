@@ -27,7 +27,7 @@
     <link href="<?php echo $global['assets.prefix'];?>/themes/scblog/assets/css/app.css" rel="stylesheet">
 
   </head>
-  <body id="page-home">
+  <body id="page">
 
   	<!-- begin:navbar -->
   	<nav class="navbar navbar-default navbar-fixed-top navbar-transparent navbar-scroll" role="navigation">

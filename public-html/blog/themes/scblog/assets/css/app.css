@@ -9,11 +9,15 @@
 /*	max-height: 15em; */
 }
 
+body.page article.post {
+	padding: 0 30px;
+}
+
 .service-content audio{
 	vertical-align: bottom;
 }
 
-section#archives {
+section#archives, article.post {
 	padding-top:80px;
 	padding-bottom:80px;
 }

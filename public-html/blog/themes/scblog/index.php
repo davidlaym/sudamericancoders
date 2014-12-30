@@ -1,3 +1,4 @@
+<section class="container">
 <div class="news-head">/News</div>
 <?php
 if( count($articles) < 1 ){
@@ -30,3 +31,4 @@ else{
   }
 }
 ?>
+</section>
