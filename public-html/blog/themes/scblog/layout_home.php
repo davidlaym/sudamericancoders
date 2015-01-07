@@ -129,7 +129,22 @@
   		</div>
   	</div>
   	<!-- end:service -->
-
+    <!-- begin:promo -->
+    <div class="promo-03" style="background-image: url('img/img01.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="promo-text">
+              <div class="page-title">
+                <h2 class="text-capitalize">¡Estamos sorteando libros! <small>Regalaremos 2 copias de La Naturaleza del Software por Eduardo Días.</small></h2>
+              </div>
+              <h3><a href="#">Entérate de cómo participar</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:promo -->
   	<!-- begin:about -->
   	<div id="about" ng-controller="CodersController">
   		<div class="container">
@@ -182,50 +197,36 @@
         <div class="row">
           <div class="col-md-12">
             <div class="page-title">
-              <h2>Contact Us <small>If you have any questions, please leave us a message.</small></h2>
+              <h2>Escríbenos<small>¡Hacemos este podcast para tí!</small></h2>
             </div>
           </div>
         </div>
         <!-- break -->
         <div class="row">
           <div class="col-md-5 col-sm-5 marg30-btm">
-            <h4 class="text-uppercase text-xbold">Aditional Information</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi.</p>
-            <br>
-            <address>
-              <strong>Templateninja, Inc.</strong><br><br>
-              231 Yogyakarta, INA 55791<br>
-              mail@domain.com<br>
-              http://www.domain.com <br>
-              <abbr title="Phone">Telp.</abbr> (0274) 441-5000
-            </address>
+            <h4 class="text-uppercase text-xbold">¿Tienes algo que decirnos?</h4>
+            <p>Puedes hacernos un comentario sobre alguno de los episodios, darnos ideas de cómo hacerlo mejor, o ideas de temas o invitados que te gustaría que discutieramos.</p>
+            
           </div>
 
           <div class="col-md-7 col-sm-7">
             <form role="form" class="contact-form">
               <div class="form-group">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" class="form-control input-lg" id="author" placeholder="Name: " required>
+                <label for="name" class="sr-only">Nombre</label>
+                <input type="text" class="form-control input-lg" id="author" placeholder="Nombre: " required>
                 <span class="form-focus-icon focus-icon-name"></span>
               </div>
               <div class="form-group">
-                <label for="email" class="sr-only">Email address</label>
+                <label for="email" class="sr-only">Email</label>
                 <input type="email" class="form-control input-lg" id="email" placeholder="Email: " required>
                 <span class="form-focus-icon focus-icon-mail"></span>
               </div>
               <div class="form-group">
-                <label for="phone" class="sr-only">Phone</label>
-                <input type="text" class="form-control input-lg" id="phone" placeholder="Phone: " required>
-                <span class="form-focus-icon focus-icon-phone"></span>
-              </div>
-              <div class="form-group">
-                <label for="message" class="sr-only">Message</label>
-                <textarea class="form-control input-lg" id="message" placeholder="Message: " rows="5" required></textarea>
+                <label for="message" class="sr-only">Mensaje</label>
+                <textarea class="form-control input-lg" id="message" placeholder="Mensaje: " rows="5" required></textarea>
                 <span class="form-focus-icon focus-icon-message"></span>
               </div>
-              <button type="submit" class="btn btn-lucky btn-lg"><i class="fa fa-envelope-o"></i> Send Message</button>
+              <button type="submit" class="btn btn-lucky btn-lg"><i class="fa fa-envelope-o"></i> Enviar</button>
             </form>
           </div>
         </div>
