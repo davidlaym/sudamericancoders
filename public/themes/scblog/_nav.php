@@ -25,7 +25,6 @@
               <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
                 <?php
                   foreach ($global['categories'] as $slug => $category) {
-                    if($category == "episodios") { continue; }
                     echo '<li><a tabindex="-1" href="' . $global["base.url"] . '/category/'.$slug.'">'. $category .'</a></li>';
                   }
                 ?>

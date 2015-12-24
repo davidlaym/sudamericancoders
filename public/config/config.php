@@ -1,18 +1,18 @@
 <?php
 return array(
-    'site.baseurl'      => 'http://localhost:8080',   // Site URL (Global)
-    'site.name'         => 'TextPress',   // Site name (Global)
-    'site.title'        => 'PHP Flat-file blog engine',  // Site default title (Global)
-    'site.description'  => 'TextPress is an open source flat-file blog engine for PHP',  // Site default description (Global)
-    'author.name'       => 'Author name', // Global author name 
+    'site.baseurl'      => 'http://sudamericancoders.dev',   // Site URL (Global)
+    'site.name'         => 'Sudamerican Coders Podcast',   // Site name (Global)
+    'site.title'        => 'Sudamerican Coders Podcast',  // Site default title (Global)
+    'site.description'  => 'Sitio oficial del podcast Sudamerican Coders',  // Site default description (Global)
+    'author.name'       => 'Sudamerican Coders', // Global author name
     'article.path'      => './articles',      // Path to articles
-    'date.format'       => 'd M, Y',   // Date format to be used in article page (not for routes)   
+    'date.format'       => 'd M, Y',   // Date format to be used in article page (not for routes)
     'themes.path'       => './themes',  // Path to templates
     'active.theme'      => 'scblog',  // Current active template
     'layout.file'       => 'layout',    // Site layout file
     'file.extension'    => '.txt',   // file extension of articles
     'disqus.username'   => '',   // Your disqus username or false (Global)
-    'markdown'          => true, //Enable of disable markdown parsing. 
+    'markdown'          => true, //Enable of disable markdown parsing.
     'assets.prefix'     => '', // prefix to be added with assets files
     'prefix'            => '',   // prefix to be added with all URLs (not to assets). eg : '/blog'
     'google.analytics'  => false, // Google analytics code. set false to disable
@@ -63,12 +63,12 @@ return array(
             'template'  => 'rss',
             'layout'    => false,
         ),
-        'atom'  => array(   
+        'atom'  => array(
             'route'     => '/feed(/atom(.xml))',
             'template'  => 'atom',
             'layout'    => false,
         ),
-        'sitemap' => array( 
+        'sitemap' => array(
             'route'     => '/sitemap.xml',
             'template'  => 'sitemap',
             'layout'    => false,

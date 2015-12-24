@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sudamerican Coders landing page">
+    <meta name="description" content="Sitio oficial del podcast Sudamerican Coders">
     <meta name="keywords" content="bootstrap, responsive, one page, parallax, business theme">
     <meta name="author" content="templateninja">
-    <title>Sudamerican Coders</title>
+    <title>Sudamerican Coders Podcast</title>
 
     <!-- Bootstrap -->
     <link href="<?php echo $global['assets.prefix'];?>/themes/scblog/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
         					<h2 class="animated fadeInLeftBig">Hablemos de Desarrollo! ;)</h2>
         					<div class="animated fadeInDownBig">
                     <p>Puedes <strong>escucharnos</strong> en :
-						<strong>iTunes Podcasts</strong> 
+						<strong>iTunes Podcasts</strong>
 						y en <strong>SoundCloud</strong>.</p>
                     <div class="marg30-top-btm"><!--a href="#" class="btn btn-lucky-secondary btn-xl">Take a tour</a-->
 						<a href="http://bit.ly/SudCodersItunes" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_subscribe-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_subscribe-lrg.svg);}"></a>&nbsp;<a href="http://bit.ly/SudCodersSoundCloud"><img src="https://w.soundcloud.com/icon/assets/images/orange_white_64-94fc761.png"/></a></div>
@@ -60,7 +60,7 @@
         					<h2 class="animated fadeInUpBig">Es Simple</h2>
         					<div class="animated fadeInDownBig">
                     			 <p>Puedes <strong>escucharnos</strong> en :
-										<strong>iTunes Podcasts</strong> 
+										<strong>iTunes Podcasts</strong>
 										y en <strong>SoundCloud</strong>.</p>
                     <div class="marg30-top-btm"><a href="http://bit.ly/SudCodersItunes" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_subscribe-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/es_mx//images/web/linkmaker/badge_subscribe-lrg.svg);}"></a>&nbsp;<a href="http://bit.ly/SudCodersSoundCloud"><img src="https://w.soundcloud.com/icon/assets/images/orange_white_64-94fc761.png"/></a></div>
                   </div>
@@ -119,7 +119,7 @@
 						</audio>
             <a ng-href="{{getEpisodeNotesLink(item)}}">Notas del episodio</a>
   					</div>
-  				</div>	
+  				</div>
   			</div>
         <div class="row" style="padding-bottom:20px">
           <div class="col-md-4 col-md-offset-8 text-right">
@@ -164,8 +164,8 @@
 					&nbsp;<br/>
   					<p>Todos somos <span class="font-kaushan text-red">apasionados</span> por la tecnología, el desarrollo
 	 					y por hacer las cosas mejor.
-						Creemos  que  es  sumamente  importante entregar a  la 
-						<span class="font-kaushan text-black">comunidad de desarrolladores</span> contenido de calidad y en 
+						Creemos  que  es  sumamente  importante entregar a  la
+						<span class="font-kaushan text-black">comunidad de desarrolladores</span> contenido de calidad y en
 						<span class="font-kaushan text-red">nuestro idioma</span>.</p>
   				</div>
   				<!-- break -->
@@ -206,7 +206,7 @@
           <div class="col-md-5 col-sm-5 marg30-btm">
             <h4 class="text-uppercase text-xbold">¿Tienes algo que decirnos?</h4>
             <p>Puedes hacernos un comentario sobre alguno de los episodios, darnos ideas de cómo hacerlo mejor, o ideas de temas o invitados que te gustaría que discutieramos.</p>
-            
+
           </div>
 
           <div class="col-md-7 col-sm-7">
@@ -262,7 +262,7 @@
             <div class="footer-widget-logo">
               <h2>Sudamerican {Coders}</h2>
               <small>Cuéntale a tus amigos</small>
-			  
+
             </div>
           </div>
           <!-- break -->
@@ -355,7 +355,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. <a href="#">Duis aute irure</a></p>
-                
+
                 <ul class="list-inline project-detail">
                   <li>Client : <strong>Superduper, Inc.</strong></li>
                   <li>Date : <strong>Sept 02, 2014</strong></li>
@@ -387,7 +387,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. <a href="#">Duis aute irure</a></p>
-                
+
                 <ul class="list-inline project-detail">
                   <li>Client : <strong>Unknown, Inc.</strong></li>
                   <li>Date : <strong>Sept 02, 2014</strong></li>

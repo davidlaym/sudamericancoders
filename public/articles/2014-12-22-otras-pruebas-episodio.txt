@@ -4,7 +4,6 @@
 "date":"22-12-2014",
 "tag":"episodio",
 "category":"episodios",
-"section":"notas",
 "slug": "S01E09"
 }
 
@@ -19,6 +18,6 @@ Another major change is the introduction of caching, which will make it much fas
 ),
 ~~~
 
-You can disable the cache by setting `'enabled'=false`, or set another location by changing the `path`. 
+You can disable the cache by setting `'enabled'=false`, or set another location by changing the `path`.
 
 This version also comes with a default sitemap and better SEO support. You can see the sitemap in `/sitemap.xml` url, which is using `sitemap.php` template file.
