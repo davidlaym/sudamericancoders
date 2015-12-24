@@ -1,0 +1,23 @@
+.resaltado{
+	background-color:red;
+	color: white;
+}
+.coder-picture{
+	max-width: 15em;
+
+	
+/*	max-height: 15em; */
+}
+
+body.page article.post {
+	padding: 0 30px;
+}
+
+.service-content audio{
+	vertical-align: bottom;
+}
+
+section#archives, article.post {
+	padding-top:80px;
+	padding-bottom:80px;
+}
